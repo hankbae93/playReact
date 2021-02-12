@@ -1,67 +1,42 @@
-import React, { Component } from 'react';
-import ToDo from './ToDo';
+import React, { useState, useEffect } from 'react';
+import Form from './components/Form';
+import ToDolist from './components/ToDolist';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: '',  
-      todos: []
+const App = () => {    
+    const [todos, setTodos] = useState([]);
+
+    useEffect(()=> {
+        getLocalTodos();
+    }, []);
+
+    useEffect(() => {                   
+        saveLocalTodos();
+    }, [todos]);         
+
+    const saveLocalTodos = () => {
+        localStorage.setItem('todos', JSON.stringify(todos)); 
+    }
+
+    const getLocalTodos = () => {        
+        if (localStorage.getItem('todos')) {
+            const getTodos = JSON.parse(localStorage.getItem('todos'));
+            setTodos(getTodos);
+        }
     };
-  }
-
-  onSubmitTodos = (e) => {
-    const { todos, value } = this.state;
-    e.preventDefault();
-    this.setState({
-      todos: [
-        ...todos,
-        {'key' : `todo_${value}`, 'value': value}
-      ],
-      value: ''
-    });
-  };
-
-  onChangeInput = (e) => {
-    this.setState({
-      value: e.target.value
-    });
-  };
-
-  deleteTOdo = (e) => {
-    const a = e.target.parentElement;
-    const { todos } = this.state;
-    this.setState({
-      todos: todos.filter(todo => `${todo.value}` !== `${a.dataset.value}`)
-    });   
-  }  
-
-  render() {
-    const { value, todos } = this.state;
-    return(
-      <div className="App">
-          <form onSubmit={this.onSubmitTodos}>
-            <input 
-            value={value}
-            onChange={this.onChangeInput}
+    
+    return (        
+        <div className="App">
+            <h1>RanJa ToDoLIST</h1>
+            <Form 
+                todos={todos}
+                setTodos={setTodos}
             />
-          </form>
-          <ul>
-            {todos.map((todo, i) => {
-              return (
-                <ToDo 
-                key={Math.random()}
-                id={i}
-                value={todo.value}    
-                onDelete={this.deleteTOdo}       
-                />
-              );
-            })}
-          </ul>
-          
-      </div>
+            <ToDolist
+                todos={todos}
+                setTodos={setTodos}
+            />
+        </div>
     );
-  }
 }
 
 export default App;
