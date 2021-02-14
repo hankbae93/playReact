@@ -1,39 +1,23 @@
-import React, { Component } from 'react'; 
-import Books from './Books';
-import Form from './Form';
+import React, { useState } from 'react';
+import Form from './components/Form';
+import BookList from './components/BookList';
 
-class App extends Component {
-    state = {        
-        data: []
-    };       
+const App = () => {
+    const [bookList, setBookList] = useState([]);
 
-    setBookData = (Book) => {
-        this.setState({
-            data: Book
-        });
-    }
-
-    render() {
-        const { data } = this.state;
-        return (
-            <div className="App">
-                <h1>KaKao Book Search</h1>
-                <Form 
-                setBookData={this.setBookData}
+    return (
+        <div className="App">
+            <div class="book_search">
+                <h1>카카오 책 검색</h1>
+                <Form             
+                setBookList={setBookList}
                 />
-                <ul>
-                    {data.map((item) => {
-                        return(
-                            <Books
-                            key={Math.random()}
-                            data={item} 
-                            />
-                        );
-                    })}
-                </ul>
-            </div>
-        )
-    }
-}
+            </div>            
+            <BookList 
+            bookList={bookList}
+            />
+        </div>
+    );
+};
 
 export default App;
