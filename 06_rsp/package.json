@@ -1,11 +1,11 @@
 {
-  "name": "03_numberbaseball",
+  "name": "rsp",
   "version": "1.0.0",
-  "description": "숫자야구",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --env development",
-    "build" : "webpack"
+    "build": "webpack"
   },
   "author": "RanJa",
   "license": "MIT",

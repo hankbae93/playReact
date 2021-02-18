@@ -17,3 +17,11 @@ site: https://ranjafunc.github.io/playReact/03_numberBaseball/
 04 - quizApp
 
 site: https://ranjafunc.github.io/playReact/04_quizApp/
+
+05 - responCheck
+
+site : https://ranjafunc.github.io/playReact/05_responCheck/
+
+06 - rsp
+
+site : https://ranjafunc.github.io/playReact/06_rsp/

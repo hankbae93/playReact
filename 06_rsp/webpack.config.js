@@ -2,7 +2,7 @@ const path = require('path');
 const RefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 module.exports = {
-    name: 'numberbaseball',
+    name: 'rsp',
     mode: 'production', 
     devtool: 'eval',
     resolve: { 
