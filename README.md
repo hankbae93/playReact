@@ -25,3 +25,7 @@ site : https://ranjafunc.github.io/playReact/05_responCheck/
 06 - rsp
 
 site : https://ranjafunc.github.io/playReact/06_rsp/
+
+07 - lotto
+
+site : https://ranjafunc.github.io/playReact/07_lotto/

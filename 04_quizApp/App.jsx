@@ -32,7 +32,35 @@ const QUIZ = [
             "EDAM엔터테인먼트",
         ],        
         answer: "3"
+    },{
+        question : "아이유 소속사는?",
+        choice: [
+            "YG엔터테인먼트",
+            "JYP엔터테인먼트",
+            "SM엔터테인먼트",
+            "EDAM엔터테인먼트",
+        ],        
+        answer: "3"
+    },{
+        question : "아이유 소속사는?",
+        choice: [
+            "YG엔터테인먼트",
+            "JYP엔터테인먼트",
+            "SM엔터테인먼트",
+            "EDAM엔터테인먼트",
+        ],        
+        answer: "3"
+    },{
+        question : "아이유 소속사는?",
+        choice: [
+            "YG엔터테인먼트",
+            "JYP엔터테인먼트",
+            "SM엔터테인먼트",
+            "EDAM엔터테인먼트",
+        ],        
+        answer: "3"
     },
+
 ]
 
 class App extends Component {
