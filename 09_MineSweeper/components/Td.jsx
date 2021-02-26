@@ -38,10 +38,9 @@ const getTdStyle = (code) => {
 
 const getTdText = (code) => {
     switch (code) {
-        case CODE.NORMAL:
-            return '';
         case CODE.MINE:
-            return 'X';
+        case CODE.NORMAL:
+            return '';        
         case CODE.FLAG:
         case CODE.FLAG_MINE:
             return '🚩';
