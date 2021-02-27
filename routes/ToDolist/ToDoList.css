@@ -1,0 +1,22 @@
+#ToDoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#ToDoList h1 {
+  padding: 15px 0;
+}
+
+#ToDoList li {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  padding: 5px 3px 5px 6px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+#ToDoList form input {
+  padding: 5px 1px;
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+.book_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.book_search h1 {
+  color: rgb(24, 23, 16);
+}
+.book_search li {
+  display: flex;
+  width: 100%;
+  padding: 0 15px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 15px;
+  font-size: 13px;
+}
+.book_search li div {
+  width: 60%;
+  height: inherit;
+  background: rgb(242, 250, 200);
+  border-radius: 15px;
+  border: 1px solid #2b2b2b;
+}
+.book_search li div > * {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #2b2b2b;
+}
+.book_search li div span {
+  border: none;
+}
+.book_search li h3 {
+  font-size: 14px;
+}
+.book_search li div p {
+  padding: 15px 10px;
+}
+.book_search li a {
+  display: block;
+  box-shadow: 7px 4px 10px 1px rgb(0 0 0 / 10%);
+}

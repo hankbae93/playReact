@@ -1,0 +1,63 @@
+#QuizApp .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#QuizApp .intro h1 {
+  font-size: 10vw;
+}
+#QuizApp .intro button {
+  margin: 15px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#QuizApp .quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#QuizApp .quiz p {
+  font-size: 20px;
+  text-align: center;
+}
+#QuizApp .quiz ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+#QuizApp .quiz li {
+  padding: 5px 10px;
+  margin: 15px 0;
+  width: 50%;
+  background: rgb(69, 171, 255);
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 20px;
+  transition: background 0.3s ease-in-out;
+}
+#QuizApp .quiz li:hover {
+  background: rgb(209, 110, 110);
+}
+#QuizApp .score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#QuizApp .score strong {
+  font-size: 10vw;
+  color: rgb(209, 110, 110);
+}
+#QuizApp .score i {
+  font-size: 5vw;
+}

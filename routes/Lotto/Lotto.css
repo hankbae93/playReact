@@ -1,0 +1,15 @@
+.balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  border: 1px solid #2b2b2b;
+}

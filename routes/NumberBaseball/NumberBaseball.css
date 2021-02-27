@@ -1,0 +1,12 @@
+.NumberBaseball {
+  padding: 15px;
+  list-style: none;
+}
+.NumberBaseball .result {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.NumberBaseball input {
+  width: 150px;
+  padding: 3px 5px;
+}
