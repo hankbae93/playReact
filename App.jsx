@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
+import Navigation from './components/Navigation';
 import ToDoList from './routes/ToDolist/ToDoList';
 import MineSearch from './routes/MineSearch/MineSearch';
 import NumberBaseball from './routes/NumberBaseball/NumberBaseball';
@@ -13,16 +13,10 @@ import BookSearch from './routes/BookSearch/BookSearch';
 
 
 
-const App = ({ history }) => {
-    
-    useEffect(() => {
-        
-        
-    }, [])
-    console.log(history)
+const App = ({  }) => {
     return (        
         <BrowserRouter>               
-            <Home />                               
+            <Navigation />                            
             
             <div className="App">                
                 <Switch>
