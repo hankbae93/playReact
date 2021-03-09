@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useRef, useMemo, useCallback} from 'react';
 import Ball from './Ball';
+import './Lotto.css';
+
 const getRandomNumbers = () => {
     const randomBox = Array(45)
         .fill()

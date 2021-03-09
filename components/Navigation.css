@@ -1,0 +1,26 @@
+#navigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  width: 100%;
+}
+#navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navigation li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+}
+#navigation li a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -5,6 +5,7 @@ import './Navigation.css';
 function Navigation(props) {
     return (
         <div id="navigation">
+            <h1>Play React</h1>
             <ul>
                 <li><Link to="/to_do_list">투두리스트</Link></li>
                 <li><Link to="/mine_search">지뢰찾기</Link></li>

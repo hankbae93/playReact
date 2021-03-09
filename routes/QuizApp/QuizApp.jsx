@@ -82,14 +82,11 @@ class QuizApp extends Component {
         const { mode, quiz, score } = this.state;
         switch (mode) {
             case 'ready':
-                return (<IntroQuiz changeMode={this.onChangeMode}/>);
-                break;
+                return (<IntroQuiz changeMode={this.onChangeMode}/>);                
             case 'start':
-                return <Quiz data={quiz} changeMode={this.onChangeMode}/> ;
-                break;
+                return <Quiz data={quiz} changeMode={this.onChangeMode}/> ;               
             case 'end':
-                return <EndScore score={score} data={quiz}/>;
-                break;
+                return <EndScore score={score} data={quiz}/>;                
         }
     };
 
