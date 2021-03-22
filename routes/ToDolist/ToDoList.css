@@ -1,8 +1,5 @@
 #ToDoList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;
 }
 #ToDoList h1 {
   padding: 15px 0;

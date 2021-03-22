@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation(props) {
+function Navigation() {
     return (
         <div id="navigation">
             <h1>Play React</h1>

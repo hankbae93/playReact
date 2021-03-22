@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ranjafunc.github.io/playReact/",
+  "homepage": "https://ranjafunc.github.io/playReact",
   "name": "play-react",
   "version": "1.0.0",
   "description": "",
@@ -8,7 +8,7 @@
     "dev": "webpack serve --env development",
     "build": "webpack",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "RanJa",
   "license": "MIT",
